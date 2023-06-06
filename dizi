@@ -1,0 +1,26 @@
+#include <iostream>//Basit bir algoritma ödevi Dizi oluşturup max olanı bulma
+using namespace std;
+int main(){
+    int x,i,m;
+    int max=1;
+    cout<<"kapasite:"<<endl;
+    cin>>x;
+    int array[x];
+    cout<<"memberı gir: "<<endl;
+    for(i=0;i<x;i++){//üyeleri diziye alma 
+       
+       cin>>m;
+       array[i]=m;
+      
+       if(m>max)//Büyük olan memberı alma
+       max=m;
+        
+    }
+    cout<<"üyeler = "<<endl;
+    for(i=0;i<x;i++){//üyeleri ekrana verme
+        cout<<"{"<<array[i]<<"}";
+    }
+    cout<<endl;
+    cout<<"max= "<<max;
+    return 0;
+}
